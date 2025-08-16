@@ -61,5 +61,16 @@ DB_DATABASE=todolist
 DB_PASSWORD=your_password
 DB_PORT=5432
 
+CREATE DATABASE todolist
+
+inside the database in postgresql create two tables users and todo, users is for keeping the track of current users while todo is used for tracking tasks.
+
+CREATE TABLE users(
+  id integer SERIAL PRIMARY KEY,
+  name varchar(100) not null,
+  color varchar(50) not null
+) 
+
+=
 
 
