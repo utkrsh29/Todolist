@@ -1,0 +1,108 @@
+/* ===== NEW USER PAGE STYLES ===== */
+body {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+h1 {
+  color: #fff;
+  background-color: #a683e3;
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  margin-bottom: 30px;
+}
+
+form {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  padding: 25px 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+form p {
+  font-size: 18px;
+  color: #00204a;
+  margin: 15px 0 10px;
+}
+
+/* Name input */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 3px solid #a683e3;
+  outline: none;
+  background: transparent;
+  text-align: center;
+}
+
+/* Color selection grid */
+input[type="radio"] {
+  display: none;
+}
+
+label span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+label span:hover {
+  transform: scale(1.15);
+}
+
+input[type="radio"]:checked + label span {
+  border-color: #a683e3;
+}
+
+/* Color swatches */
+.red { background-color: red; }
+.green { background-color: green; }
+.yellow { background-color: yellow; }
+.olive { background-color: olive; }
+.orange { background-color: orange; }
+.teal { background-color: teal; }
+.blue { background-color: blue; }
+.violet { background-color: violet; }
+.purple { background-color: purple; }
+.pink { background-color: pink; }
+
+/* Layout for color picker */
+form label {
+  margin: 8px;
+}
+
+.spacer {
+  height: 20px;
+}
+
+/* Add button */
+button {
+  background-color: #a683e3;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+button:hover {
+  background-color: #8f5fe8;
+  transform: scale(1.05);
+}
